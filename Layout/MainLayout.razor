@@ -1,4 +1,13 @@
-﻿@inherits LayoutComponentBase
+﻿@using Microsoft.AspNetCore.Components.WebAssembly.Hosting
+@inherits LayoutComponentBase
+@inject IWebAssemblyHostEnvironment HostEnvironment
+@inject IJSRuntime JsRuntime
+
+@if (!HostEnvironment.IsDevelopment())
+{
+    <link rel="stylesheet" href="css/tailwind.css" />
+}
+
 <div class="page">
     <div class="">
         <NavMenu />
@@ -10,3 +19,13 @@
         </article>
     </main>
 </div>
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender && HostEnvironment.IsDevelopment())
+        {
+            await JsRuntime.InvokeVoidAsync("window.loadTailwindCdnJs");
+        }
+    }
+}
