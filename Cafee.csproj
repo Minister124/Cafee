@@ -12,4 +12,11 @@
     <PackageReference Include="MudBlazor" Version="7.8.0" />
   </ItemGroup>
 
+  <Target Name="Tailwind Transformer" Condition="'$(Configuration)'=='Debug'" BeforeTargets="Build">
+    <Message Text="-----Generating Tailwind CSS------" Importance="high"/>
+    <Exec Command="npx tailwindcss -i .\wwwroot\css\app.css -o .\wwwroot\css\tailwind.css">
+      
+    </Exec>
+  </Target>
+
 </Project>
