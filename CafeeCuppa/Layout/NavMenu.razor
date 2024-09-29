@@ -1,5 +1,21 @@
-﻿<MudNavMenu>
-    <MudNavLink Href="">
-        <MudImage Width="105" class="-ml-4" ObjectFit="ObjectFit.Cover" Fluid="true" Src="assets/Navbar/Logo.png" />
-    </MudNavLink>
-</MudNavMenu>
+﻿<nav class="flex items-center justify-between px-4 py-3">
+    <a href="/">
+        <MudImage Width="100" class="-ml-2" ObjectFit="ObjectFit.Cover" Fluid="true" Src="assets/Navbar/Logo.png" />
+    </a>
+    <div class="flex gap-15 font-medium">
+        <a href="#" class="text-neutral-800 hover:text-neutral-500">Products</a>
+        <a href="#" class="text-neutral-800 hover:text-neutral-500">Menu</a>
+        <a href="#" class="text-neutral-800 hover:text-neutral-500">About Us</a>
+        <a href="#" class="text-neutral-800 hover:text-neutral-500">Blogs</a>
+        <a href="#" class="text-neutral-800 hover:text-neutral-500">Testimonials</a>
+        <a href="#" class="text-neutral-800 hover:text-neutral-500">Contact</a>
+    </div>
+    <div class="flex space-x-6 font-medium">
+        <button class="bg-[#7F5539] text-white hover:bg-brown-600 rounded-md px-6 py-2">
+            Order Now
+        </button>
+        <div class="border-2 border-[#7F5539]  text-[#7F5539] hover:bg-brown-100 rounded-md px-6 py-2 cursor-pointer">
+            Sign Up
+        </div>
+    </div>
+</nav>
