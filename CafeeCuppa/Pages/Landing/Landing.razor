@@ -1,35 +1,88 @@
 ﻿<style>
     .custom-rounded-right {
-        border-radius: 0 40% 0 40%;
+        border-radius: 0 30% 0 30%;
     }
 
     .custom-rounded-left {
-        border-radius: 40% 0 40% 0;
+        border-radius: 30% 0 30% 0;
     }
 </style>
-
-<div class="max-h-[91vh] px-8 py-10 flex flex-col items-center">
-    <div class="text-center align-middle mb-8">
-        <h1 class="text-5xl font-bold mb-4" style="font-family: 'Times New Roman', Times, serif;">
-            <p>Enjoy Your Favorite</p> 
-            <span class="text-[#7F5539]">Coffee</span> with <span class="text-[#7F5539]">Cuppa.</span>
-        </h1>
-        <p class="text-sm mx-auto mb-6">
+<section class="min-h-[90vh]">
+    <div class="px-8 py-14 flex flex-col items-center">
+        <div class="text-center align-middle mb-8">
+            <h1 class="text-5xl font-bold mb-4" style="font-family: 'Times New Roman', Times, serif;">
+                <p>Enjoy Your Favorite</p>
+                <span class="text-[#7F5539]">Coffee</span> with <span class="text-[#7F5539]">Cuppa.</span>
+            </h1>
+            <p class="text-sm mx-auto mb-6">
             <p>Welcome to Cuppa, Your ultimate coffee destination! Indulge in our carefully crafted brews</p>
             <p>savor the rich aromas, and enjoy a cozy ambiance perfect for coffee lovers. From classic</p>
             <p>espressos to delightful lattes, every cup is brewed to perfection. Join us for an exceptional</p>
             <p>coffee experience</p>
+            </p>
+            <button
+                class="bg-[#7F5539] mt-4 text-white rounded-lg px-8 py-3 hover:bg-[#692d05] transition duration-300">
+                Explore Now
+            </button>
+        </div>
+        <div class="flex justify-center space-x-4">
+            <MudImage Fluid="true" src="assets/Landing/Coffee1.jpg" Width="200"
+                class="object-cover custom-rounded-right" alt="Coffee Image" />
+            <MudImage Fluid="true" src="assets/Landing/Coffee2.jpg" Width="200" class="object-cover custom-rounded-left"
+                alt="Coffee Image" />
+            <MudImage Fluid="true" src="assets/Landing/Coffee3.jpg" Width="200"
+                class="object-cover custom-rounded-right" alt="Coffee Image" />
+            <MudImage Fluid="true" src="assets/Landing/Coffee4.jpg" Width="200" class="object-cover custom-rounded-left"
+                alt="Coffee Image" />
+            <MudImage Fluid="true" src="assets/Landing/Coffee3.jpg" Width="200"
+                class="object-cover custom-rounded-right" alt="Coffee Image" />
+            <MudImage Fluid="true" src="assets/Landing/Coffee5.jpg" Width="200" class="object-cover custom-rounded-left"
+                alt="Coffee Image" />
+        </div>
+    </div>
+</section>
+<section class="min-h-[100vh]">
+    <div class="text-center py-2 align-middle mb-4">
+        <h1 class="text-5xl font-bold mb-4" style="font-family: 'Times New Roman', Times, serif;">
+            <p>Choose Your</p>
+            <span class="text-[#7F5539]">Coffee</span> and <span class="text-[#7F5539]">Space!</span>
+        </h1>
+        <p class="text-sm mx-auto mb-6">
+        <p>Since 2024, Cuppa has been serving over 25,000+ cups of coffee, offering a cozy and</p>
+        <p>productive space for our valued customers</p>
         </p>
-        <button class="bg-[#7F5539] text-white rounded-lg px-8 py-3 hover:bg-[#692d05] transition duration-300">
-            Explore Now
-        </button>
     </div>
-    <div class="flex justify-center space-x-5">
-        <MudImage Fluid="true" src="assets/Landing/Coffee1.jpg" class="w-52 h-56 object-cover custom-rounded-right" alt="Coffee Image"/>
-        <MudImage Fluid="true" src="assets/Landing/Coffee2.jpg" class="w-52 h-56 object-cover custom-rounded-left" alt="Coffee Image"/>
-        <MudImage Fluid="true" src="assets/Landing/Coffee3.jpg" class="w-52 h-56 object-cover custom-rounded-right" alt="Coffee Image"/>
-        <MudImage Fluid="true" src="assets/Landing/Coffee4.jpg" class="w-52 h-56 object-cover custom-rounded-left" alt="Coffee Image"/>
-        <MudImage Fluid="true" src="assets/Landing/Coffee3.jpg" class="w-52 h-56 object-cover custom-rounded-right" alt="Coffee Image"/>
-        <MudImage Fluid="true" src="assets/Landing/Coffee5.jpg" class="w-52 h-56 object-cover custom-rounded-left" alt="Coffee Image"/>
+    <div class="flex gap-2 px-8">
+        <div class="flex flex-col w-full gap-4">
+            <img src="assets/Landing/Space1.jfif" class="w-full h-[350px] object-cover rounded-md" />
+            <img src="assets/Landing/Space2.jfif" class="w-full h-[350px] object-cover rounded-md" />
+        </div>
+        <div class="flex flex-col gap-4 w-full pt-28">
+            <img src="assets/Landing/Space3.jfif" class="w-full h-[350px] object-cover rounded-md" />
+            <img src="assets/Landing/Space4.jfif" class="w-full h-[350px] object-cover rounded-md" />
+        </div>
     </div>
-</div>
+    <div class="mt-20 max-w-6xl mx-auto text-center py-12">
+        <div class="flex justify-between items-center border-t-2 border-b-2 border-gray-400 p-10 ">
+            <div class="flex-1">
+                <h2 class="text-4xl font-bold text-black">25+</h2>
+                <p class="text-black mt-2">Coffee Varient</p>
+            </div>
+            <div class="w-px border-l border-gray-300 h-16"></div>
+            <div class="flex-1">
+                <h2 class="text-4xl font-bold text-black">30+</h2>
+                <p class="text-black mt-2">Meeting room</p>
+            </div>
+            <div class="w-px border-l border-gray-300 h-16"></div>
+            <div class="flex-1">
+                <h2 class="text-4xl font-bold text-black">20+</h2>
+                <p class="text-black mt-2">Event Space</p>
+            </div>
+            <div class="w-px h-16 border-l border-gray-300"></div>
+            <div class="flex-1">
+                <h2 class="text-black font-bold text-4xl">15+</h2>
+                <p class="text-black mt-2">Global Achievement</p>
+            </div>
+        </div>
+    </div>
+</section>
