@@ -223,3 +223,15 @@
 
 </section>
 @*------------------------- About Us End ----------------------------*@
+
+@code{
+    List<Products> products = new List<Products>{};
+    
+    public class Products{
+        public string Name {get; set;}
+        public double Rating { get; set; }
+        public string Description { get; set; }
+        public int Price { get; set; }
+        public string Image { get; set; }
+    }
+}
