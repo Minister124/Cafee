@@ -127,6 +127,16 @@
             </div>
         }
     </div>
+    @* Pop-Up Modal *@
+    @if(showModal){
+        <div>
+            <div>
+                <h3>@selectedProduct.Name</h3>
+                <p>@selectedProduct.Description</p>
+                <button>Close</button>
+            </div>
+        </div>
+    }
 </section>
 @*------------------------- Our Products End ---------------------------------*@
 
@@ -189,6 +199,13 @@
         selectedProduct = products;
         showModal = true;
     }
+
+    private void CloseModal()
+    {
+        showModal = false;
+        selectedProduct = null;
+    }
+
     public class Products{
         public string Name {get; set;}
         public double Rating { get; set; }
