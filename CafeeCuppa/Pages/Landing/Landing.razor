@@ -183,15 +183,50 @@
 </section>
 @*------------------------- About Us End ----------------------------*@
 
+@*------------------------- Testimonials section start ----------------------------*@
+<section class="mt-24">
+    <div class="text-center align-middle mb-14">
+        <h1 class="text-5xl font-bold mb-12" style="font-family: 'Times New Roman', Times, serif;">
+            <span>Testimonials</span>
+        </h1>
+        <p class="text-sm mx-auto mb-6">
+        <p>Hear from our satisfied customers who love our coffee and cozy atmosphere. Their stories </p>
+        <p>highlight the exceptional experiences they’ve enjoyed at Cuppa</p>
+        </p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-12">
+
+    </div>
+</section>
+@*------------------------- Testimonials section End ----------------------------*@
+
+@*------------------------- Blogs section Start ----------------------------*@
+<section class="mt-24">
+
+</section>
+@*------------------------- Blogs section End ----------------------------*@
+
+@*------------------------- Location section Start ----------------------------*@
+<section class="mt-24">
+
+</section>
+@*------------------------- Location section End ----------------------------*@
+
 @code
 {
     private List<Products> products = new List<Products>{
-        new Products { Name = "Chocolate Latte", Rating = 4.5, Description = "Lorem ipsum dolor sit amet consectetur...", Price = 250, Image = "assets/Products/Product1.jpg" },
-        new Products { Name = "Capuccino", Rating = 4.5, Description = "Lorem ipsum dolor sit amet consectetur...", Price = 250, Image = "assets/Products/Product4.jpg" },
-        new Products { Name = "Mocha Latte", Rating = 4.5, Description = "Lorem ipsum jsdgfjdshoashoihfdoisajdoihfdoihsd hnodishnfoisdhiohjsdoihsdiochcsdoiufoids cioisdhfoihsdoijhfiosdoi dolor sit amet consectetur...", Price = 250, Image = "assets/Products/Product2.jpg" },
-        new Products { Name = "Latte", Rating = 4.5, Description = "Lorem ipsum dolor sit amet consectetur...", Price = 250, Image = "assets/Products/Product3.jpg" }
+        new Products { Name = "Chocolate Latte", Rating = 4.5, Description = "Lorem ipsum dolor sit amet consectetur...", Price = "Rs. 250", Image = "assets/Products/Product1.jpg" },
+        new Products { Name = "Capuccino", Rating = 4.5, Description = "Lorem ipsum dolor sit amet consectetur...", Price = "Rs. 250", Image = "assets/Products/Product4.jpg" },
+        new Products { Name = "Mocha Latte", Rating = 4.5, Description = "Lorem ipsum dolor sit amet consectetur...", Price = "Rs. 250", Image = "assets/Products/Product2.jpg" },
+        new Products { Name = "Latte", Rating = 4.5, Description = "Lorem ipsum dolor sit amet consectetur...", Price = "Rs. 250", Image = "assets/Products/Product3.jpg" }
     };
     
+    private List<Testimonials> testimonials = new List<Testimonials>{
+        new Testimonials{Name="Jhon Doe", Description="Lorem this and that. I don't give a fuck sheesh. Sibal hareko harae xu",Image="", Rating=5},
+        new Testimonials{Name="Mangney Buda", Description="Lorem this and that. I don't give a fuck sheesh. Sibal hareko harae xu",Image="", Rating=5},
+        new Testimonials{Name="Harkey Hawaldar", Description="Lorem this and that. I don't give a fuck sheesh. Sibal hareko harae xu",Image="", Rating=5},
+        new Testimonials{Name="Dhurmus", Description="Lorem this and that. I don't give a fuck sheesh. Sibal hareko harae xu",Image="", Rating=5},
+    };
     private bool showModal = false;
     private Products? selectedProduct;
 
@@ -210,7 +245,16 @@
         public string Name {get; set;}
         public double Rating { get; set; }
         public string Description { get; set; }
-        public int Price { get; set; }
+        public string Price { get; set; }
         public string Image { get; set; }
+    }
+
+    public class Testimonials{
+        public string Name {get; set;}
+        public double Rating {get; set;}
+
+        public string Description {get; set;}
+
+        public string? Image {get; set;}
     }
 }
