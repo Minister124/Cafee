@@ -195,7 +195,25 @@
         </p>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-12">
-
+        @foreach(var testimonial in testimonials){
+            <div class="border-2 max-w-xs overflow-hidden shadow-lg">
+                <div class=" flex align-middle justify-between items-center">
+                    <img src="@testimonial.Image" alt="@testimonial.Name">
+                    <div class="flex-col align-middle items-center">
+                        <span class="text-lg font-bolld mb-2">@testimonial.Name</span>>
+                        <div class="flex justify-between align-middle items-center">
+                            <span class="text-yellow-500">★</span>
+                            <span class="ml-2 text-sm">@testimonial.Rating</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p>
+                        @testimonial.Description
+                    </p>
+                </div>
+            </div>
+        }
     </div>
 </section>
 @*------------------------- Testimonials section End ----------------------------*@
@@ -222,10 +240,10 @@
     };
     
     private List<Testimonials> testimonials = new List<Testimonials>{
-        new Testimonials{Name="Jhon Doe", Description="Lorem this and that. I don't give a fuck sheesh. Sibal hareko harae xu",Image="", Rating=5},
-        new Testimonials{Name="Mangney Buda", Description="Lorem this and that. I don't give a fuck sheesh. Sibal hareko harae xu",Image="", Rating=5},
-        new Testimonials{Name="Harkey Hawaldar", Description="Lorem this and that. I don't give a fuck sheesh. Sibal hareko harae xu",Image="", Rating=5},
-        new Testimonials{Name="Dhurmus", Description="Lorem this and that. I don't give a fuck sheesh. Sibal hareko harae xu",Image="", Rating=5},
+        new Testimonials{Name="Jhon Doe", Description="Lorem this and that. I don't give a fuck sheesh. Sibal hareko harae xu",Image="assets/Testimonials/Person1.jpg", Rating=5},
+        new Testimonials{Name="Mangney Buda", Description="Lorem this and that. I don't give a fuck sheesh. Sibal hareko harae xu",Image="assets/Testimonials/Person2.jpg", Rating=5},
+        new Testimonials{Name="Harkey Hawaldar", Description="Lorem this and that. I don't give a fuck sheesh. Sibal hareko harae xu",Image="assets/Testimonials/Person3.jpg", Rating=5},
+        new Testimonials{Name="Dhurmus", Description="Lorem this and that. I don't give a fuck sheesh. Sibal hareko harae xu",Image="assets/Testimonials/Person4.jpg", Rating=5},
     };
     private bool showModal = false;
     private Products? selectedProduct;
