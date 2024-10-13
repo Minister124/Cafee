@@ -195,20 +195,20 @@
         </p>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-12">
-        @foreach(var testimonial in testimonials){
-            <div class="border-2 max-w-xs overflow-hidden shadow-lg px-4">
-                <div class=" flex align-middle justify-between items-center">
-                    <img class="object-cover rounded-full w-12" src="@testimonial.Image" alt="@testimonial.Name">
-                    <div class="flex-col align-middle items-center">
-                        <span class="text-lg font-bolld mb-2">@testimonial.Name</span>
-                        <div class="flex align-middle items-center">
+        @foreach(var testimonial in testimonials) {
+            <div class="border-2 border-gray-200 max-w-xs overflow-hidden shadow-lg p-4 bg-[#fdf8f3]">
+                <div class="flex items-center space-x-4">
+                    <img class="object-cover rounded-full w-12 h-12" src="@testimonial.Image" alt="@testimonial.Name">
+                    <div class="flex-col">
+                        <span class="text-lg font-bold">@testimonial.Name</span>
+                        <div class="flex items-center space-x-1">
                             <span class="text-yellow-500">★</span>
-                            <span class="ml-2 text-sm">@testimonial.Rating</span>
+                            <span class="text-sm">@testimonial.Rating</span>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <p class="text-sm mb-4">
+                <div class="mt-4">
+                    <p class="text-sm text-gray-600">
                         @testimonial.Description
                     </p>
                 </div>
